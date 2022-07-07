@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Use</title>
+     <script src="https://kit.fontawesome.com/893aec032c.js" crossorigin="anonymous"></script>
     <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
         nav a {
             text-decoration: none;
             color: rgb(4, 80, 55);
         }
         .login-container {
             display: flex;
-            justify-content: center;
+            justify-content:center;
         }
         .login-form {
             display: flex;
@@ -40,13 +45,18 @@
 <body>
     <header>
         <nav>
-            <a href="">Home </a>
-            <a href="">Products</a>
-            <a href="">Order</a>
-            <a href="">Abut us</a>
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>
+                <a href="">Home </a>
+                <a href="">Products</a>
+                <a href="">Order</a>
+                <a href="">Abut us</a>
+            </span>
+            <span>   <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""> <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </span>
         </nav>
     </header>
+     <marquee behavior="scroll" direction="left">Please login</marquee>
     <section class="login-container">
         <form action="" class="login-form">
 
@@ -57,6 +67,6 @@
         </form>
 
     </section>
-    <script src="https://kit.fontawesome.com/893aec032c.js" crossorigin="anonymous"></script>
+   
 </body>
 </html>
