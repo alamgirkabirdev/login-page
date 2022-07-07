@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Use</title>
+    <style>
+        nav a {
+            text-decoration: none;
+            color: rgb(4, 80, 55);
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input, button {
+            font-size: 1.3em;
+            margin-top: 15px;
+            padding-left: 10px;
+            border: 2px solid lightblue;
+            border-radius: 15px;
+            height: 35px;
+        }
+        .login-form button {
+            background-color: aqua;
+            font-weight: 700;
+            border: 0;
+            padding: 5px;
+        }
+        .submit-btn{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Home </a>
+            <a href="">Products</a>
+            <a href="">Order</a>
+            <a href="">Abut us</a>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="" class="login-form">
+
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="Your Email" id="" required >
+            <input type="password" placeholder="Your Password" name="password" id=""required>
+            <button class="submit-btn" type="submit">Login</button>
+        </form>
+
+    </section>
+    <script src="https://kit.fontawesome.com/893aec032c.js" crossorigin="anonymous"></script>
+</body>
+</html>
